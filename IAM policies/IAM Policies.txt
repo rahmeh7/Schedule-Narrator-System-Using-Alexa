@@ -1,0 +1,44 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:BatchGetItem",
+                "dynamodb:ConditionCheckItem",
+                "dynamodb:PutItem",
+                "dynamodb:DescribeContributorInsights",
+                "dynamodb:Scan",
+                "dynamodb:ListTagsOfResource",
+                "dynamodb:Query",
+                "dynamodb:DescribeStream",
+                "dynamodb:DescribeTimeToLive",
+                "dynamodb:DescribeGlobalTableSettings",
+                "dynamodb:DescribeTable",
+                "dynamodb:GetShardIterator",
+                "dynamodb:DescribeGlobalTable",
+                "dynamodb:GetItem",
+                "dynamodb:DescribeContinuousBackups",
+                "dynamodb:DescribeBackup",
+                "dynamodb:GetRecords",
+                "dynamodb:DescribeTableReplicaAutoScaling"
+            ],
+            "Resource": [
+                "arn:aws:dynamodb:us-east-1:577460739252:table/Timetable",
+                "arn:aws:dynamodb:us-east-1:577460739252:table/Timetable/index/*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:DescribeReservedCapacityOfferings",
+                "dynamodb:DescribeReservedCapacity",
+                "dynamodb:DescribeLimits",
+                "dynamodb:ListStreams"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

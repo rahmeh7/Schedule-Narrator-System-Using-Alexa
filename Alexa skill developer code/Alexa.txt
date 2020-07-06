@@ -1,0 +1,173 @@
+  "interactionModel": {
+        "languageModel": {
+            "invocationName": "acro timetable",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "timeTableIntent",
+                    "slots": [
+                        {
+                            "name": "class",
+                            "type": "class"
+                        },
+                        {
+                            "name": "time",
+                            "type": "AMAZON.TIME"
+                        },
+                        {
+                            "name": "teacher",
+                            "type": "teacher"
+                        },
+                        {
+                            "name": "day",
+                            "type": "AMAZON.DayOfWeek"
+                        },
+                        {
+                            "name": "subject",
+                            "type": "subject"
+                        }
+                    ],
+                    "samples": [
+                        "who teaches {subject} in {class}",
+                        "when is {subject} lecture held in {class} on {day}",
+                        "whose lecture is in {class} at {time} on {day}",
+                        "please tell me the schedule of {class} on {day}",
+                        "At what time professor {teacher} lecture is scheduled in {class} on {day}",
+                        "when is the lecture of professor {teacher} in {class} on {day}",
+                        "where is professor {teacher} lecture at {time} on {day}",
+                        "who is going to lecture in {class} at {time} on {day}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "class",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "cs 4"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cs 3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "IT 2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ME 1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "IT 1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cs 2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cs 1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "teacher",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "sanjay bansal "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nisha rathi "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vandana kate "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kavita Namdeo "
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "subject",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "IOT"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AI"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cyber law  and ethics"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cloud computing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "soft computing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "machine learning"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
